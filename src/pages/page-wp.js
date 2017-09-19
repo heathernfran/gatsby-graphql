@@ -1,12 +1,24 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const SecondPage = () => (
+export default ({ data }) => (
   <div>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
     <Link to="/">Go back to the homepage</Link>
+    {data.allWordpressPage.edges.map(({ node }) =>
+      <div>{node.title}</div>
+    )}
   </div>
 )
 
-export default SecondPage
+export const query = graphql`
+  query AllWordpressPagesQuery {
+    allWordpressPage {
+      edges {
+        node {
+          id
+          title 
+        }
+      }
+    }
+  }
+`
