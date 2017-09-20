@@ -9,6 +9,7 @@ export default ({ data }) => (
       <div dangerouslySetInnerHTML={CreateMarkup(node.title)} />
     )}
     <Link to="/blog/">Go to blog</Link>
+    <Link to="/gallery/">Go to gallery</Link>
   </div>
 )
 
@@ -24,12 +25,3 @@ export const allPagesQuery = graphql`
     }
   }
 `
-
-// export const homepageQuery = graphql`
-//   query HomepageQuery {
-//     wordpressPage(title: {eq: "Home"}) {
-//       id
-//       title
-//     }
-//   }
-// `
