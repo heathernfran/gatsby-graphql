@@ -8,7 +8,8 @@
     "gatsby-link": "^1.6.15",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-source-wordpress": "^1.7.10",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "sanitize-html-react": "^1.13.0"
   },
   "keywords": [
     "gatsby"

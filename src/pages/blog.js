@@ -1,11 +1,12 @@
 import React from 'react'
+import CreateMarkup from '../helpers/CreateMarkup'
 
 export default ({ data }) => (
   <div>
     {data.allWordpressPost.edges.map(({ node }) =>
       <div>
         <h1>{node.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: node.content }} />
+        <div dangerouslySetInnerHTML={CreateMarkup(node.content)} />
       </div>
     )}
   </div>
