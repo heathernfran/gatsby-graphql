@@ -7,10 +7,11 @@ export default ({ data }) => (
     {data.allWordpressPage.edges.map(({ node }) =>
       <div>{node.title}</div>
     )}
+    <Link to="/blog/">Go to blog</Link>
   </div>
 )
 
-export const query = graphql`
+export const allPagesQuery = graphql`
   query AllWordpressPagesQuery {
     allWordpressPage {
       edges {
@@ -22,3 +23,12 @@ export const query = graphql`
     }
   }
 `
+
+// export const homepageQuery = graphql`
+//   query HomepageQuery {
+//     wordpressPage(title: {eq: "Home"}) {
+//       id
+//       title
+//     }
+//   }
+// `
