@@ -4,6 +4,12 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/utils/typography.js',
+      }
+    },
     /*
      * Gatsby's data processing layer begins with “source”
      * plugins. Here the site sources its data from Wordpress.
