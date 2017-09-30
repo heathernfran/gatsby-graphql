@@ -12,7 +12,7 @@
     "lodash": "^4.17.4",
     "sanitize-html-react": "^1.13.0",
     "sanitize.css": "^5.0.0",
-    "typography-theme-lawton": "^0.15.10"
+    "typography-theme-irving": "^0.15.10"
   },
   "keywords": [
     "gatsby"
