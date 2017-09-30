@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 import Container from '../components/container'
+import Nav from '../components/nav'
 
 import 'sanitize.css'
 
@@ -24,6 +25,7 @@ const TemplateWrapper = ({ children }) => (
     />
     <Header />
     <Container>
+      <Nav />
       {children()}
     </Container>
   </div>
