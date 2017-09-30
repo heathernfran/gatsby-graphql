@@ -5,7 +5,7 @@ export default ({ data }) => (
   <div>
     {data.allWordpressPost.edges.map(({ node }) =>
       <div>
-        <h1>{node.title}</h1>
+        <h1 dangerouslySetInnerHTML={CreateMarkup(node.title)} />
         <div dangerouslySetInnerHTML={CreateMarkup(node.content)} />
       </div>
     )}
