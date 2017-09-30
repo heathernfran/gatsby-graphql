@@ -10,6 +10,7 @@
     "gatsby-plugin-typography": "^1.7.9",
     "gatsby-source-wordpress": "^1.7.10",
     "lodash": "^4.17.4",
+    "material-design-lite": "^1.3.0",
     "sanitize-html-react": "^1.13.0",
     "sanitize.css": "^5.0.0",
     "typography-theme-irving": "^0.15.10"

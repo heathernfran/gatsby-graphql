@@ -1,6 +1,8 @@
 import React from 'react'
 
 export default ({ children }) =>
-  <div style={{ margin: "3rem auto", maxWidth: 600 }}>
-    {children}
-  </div>
+  <main class='mdl-layout__content' style={{ margin: "3rem auto", maxWidth: 600 }}>
+    <div class='page-content'>
+      {children}
+    </div>
+  </main>
