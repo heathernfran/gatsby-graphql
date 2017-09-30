@@ -11,17 +11,17 @@ const ListLink = props =>
 
 export default ({ data }) => (
   <div>
+    <ul style={{ listStyle: `none` }}>
+      <ListLink to="/">Homepage</ListLink>
+      <ListLink to="/blog/">Blog</ListLink>
+      <ListLink to="/gallery/">Gallery</ListLink>
+    </ul>
     {data.allWordpressPage.edges.map(({ node }) =>
       <div
         key={node.id}
         dangerouslySetInnerHTML={CreateMarkup(node.title)} 
       />
     )}
-    <ul style={{ listStyle: `none` }}>
-      <ListLink to="/">Go back to the homepage</ListLink>
-      <ListLink to="/blog/">Go to blog</ListLink>
-      <ListLink to="/gallery/">Go to gallery</ListLink>
-    </ul>
   </div>
 )
 
