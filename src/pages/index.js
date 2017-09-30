@@ -3,9 +3,8 @@ import Link from 'gatsby-link'
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Decoupled app</h1>
+    <p>Proof of concept, using Gatsby and GraphQL.</p>
     <Link to="/page-wp/">Go to WordPress demo page</Link>
   </div>
 )
