@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 
 import Container from '../components/container'
 
-import './index.css'
+import 'sanitize.css'
 
 const Header = () => (
   <div
