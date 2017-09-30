@@ -4,7 +4,7 @@ import CreateMarkup from '../helpers/CreateMarkup'
 export default ({ data }) => (
   <div>
     {data.allWordpressPost.edges.map(({ node }) =>
-      <div>
+      <div key={node.id}>
         <h1 dangerouslySetInnerHTML={CreateMarkup(node.title)} />
         <div dangerouslySetInnerHTML={CreateMarkup(node.content)} />
       </div>

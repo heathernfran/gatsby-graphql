@@ -6,7 +6,10 @@ export default ({ data }) => (
   <div>
     <Link to="/">Go back to the homepage</Link>
     {data.allWordpressPage.edges.map(({ node }) =>
-      <div dangerouslySetInnerHTML={CreateMarkup(node.title)} />
+      <div
+        key={node.id}
+        dangerouslySetInnerHTML={CreateMarkup(node.title)} 
+      />
     )}
     <Link to="/blog/">Go to blog</Link>
     <Link to="/gallery/">Go to gallery</Link>

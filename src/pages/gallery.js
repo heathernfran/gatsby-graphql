@@ -5,7 +5,7 @@ export default ({ data }) => (
   <div>
     <h1>{data.wordpressPage.title}</h1>
     {data.allWordpressWpMedia.edges.map(({ node }) =>
-      <div>
+      <div key={node.id}>
         <h2 dangerouslySetInnerHTML={CreateMarkup(node.title.rendered)} />
         <img src={node.source_url} alt={node.alt_text || node.title.rendered} />
       </div>
